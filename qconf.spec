@@ -1,7 +1,7 @@
 Summary:        Allows you to have a nice configure script for your qmake-based project
 Name:           qconf
 Version:        1.4
-Release:        1%{?dist}
+Release:        2%{?dist}
 
 Group:          Development/Tools
 License:        GPL
@@ -9,7 +9,7 @@ URL:            http://delta.affinix.com/qconf/
 Source0:        http://delta.affinix.com/download/qconf-%{version}.tar.bz2
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
-Buildrequires:  qt-devel
+Buildrequires:  qt-devel >= 4.4.0
 
 
 %description
@@ -49,5 +49,7 @@ make INSTALL_ROOT=%{buildroot} install
 
 
 %changelog
+* Fri Dec 31 2010 Alexei Panov <elemc@atisserv.ru> - 1.4-2
+- fix build requires
 * Thu Nov 12 2009 Arkady L. Shane <ashejn@yandex-team.ru> - 1.4-1
 - initial build for Fedora
