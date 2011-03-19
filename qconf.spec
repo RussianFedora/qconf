@@ -1,7 +1,7 @@
 Summary:        Allows you to have a nice configure script for your qmake-based project
 Name:           qconf
 Version:        1.4
-Release:        2%{?dist}
+Release:        3%{?dist}
 
 Group:          Development/Tools
 License:        GPL
@@ -49,7 +49,11 @@ make INSTALL_ROOT=%{buildroot} install
 
 
 %changelog
+* Sat Mar 19 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 1.4-3
+- rebuilt
+
 * Fri Dec 31 2010 Alexei Panov <elemc@atisserv.ru> - 1.4-2
 - fix build requires
+
 * Thu Nov 12 2009 Arkady L. Shane <ashejn@yandex-team.ru> - 1.4-1
 - initial build for Fedora
